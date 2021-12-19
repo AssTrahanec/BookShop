@@ -37,8 +37,20 @@ namespace BookShop
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BookStockLbl = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.AmountLbl = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.UserTotalLbl = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -52,6 +64,7 @@ namespace BookShop
             this.label6.Size = new System.Drawing.Size(59, 24);
             this.label6.TabIndex = 8;
             this.label6.Text = "Users";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label8
             // 
@@ -87,6 +100,7 @@ namespace BookShop
             this.label7.Size = new System.Drawing.Size(121, 24);
             this.label7.TabIndex = 9;
             this.label7.Text = "DashBoard";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel1
             // 
@@ -113,10 +127,14 @@ namespace BookShop
             this.label5.Size = new System.Drawing.Size(69, 24);
             this.label5.TabIndex = 7;
             this.label5.Text = "Books";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Location = new System.Drawing.Point(178, -1);
@@ -135,6 +153,108 @@ namespace BookShop
             this.label1.TabIndex = 1;
             this.label1.Text = "Book Shop";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel3.Controls.Add(this.BookStockLbl);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(46, 87);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(33, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 24);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Books Stock";
+            // 
+            // BookStockLbl
+            // 
+            this.BookStockLbl.AutoSize = true;
+            this.BookStockLbl.BackColor = System.Drawing.Color.Transparent;
+            this.BookStockLbl.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BookStockLbl.ForeColor = System.Drawing.Color.White;
+            this.BookStockLbl.Location = new System.Drawing.Point(62, 52);
+            this.BookStockLbl.Name = "BookStockLbl";
+            this.BookStockLbl.Size = new System.Drawing.Size(66, 24);
+            this.BookStockLbl.TabIndex = 9;
+            this.BookStockLbl.Text = "Stock";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel4.Controls.Add(this.AmountLbl);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Location = new System.Drawing.Point(599, 87);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.TabIndex = 3;
+            // 
+            // AmountLbl
+            // 
+            this.AmountLbl.AutoSize = true;
+            this.AmountLbl.BackColor = System.Drawing.Color.Transparent;
+            this.AmountLbl.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AmountLbl.ForeColor = System.Drawing.Color.White;
+            this.AmountLbl.Location = new System.Drawing.Point(70, 52);
+            this.AmountLbl.Name = "AmountLbl";
+            this.AmountLbl.Size = new System.Drawing.Size(66, 24);
+            this.AmountLbl.TabIndex = 9;
+            this.AmountLbl.Text = "Stock";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(31, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(147, 24);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Total Amount";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel5.Controls.Add(this.UserTotalLbl);
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Location = new System.Drawing.Point(325, 310);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.TabIndex = 4;
+            // 
+            // UserTotalLbl
+            // 
+            this.UserTotalLbl.AutoSize = true;
+            this.UserTotalLbl.BackColor = System.Drawing.Color.Transparent;
+            this.UserTotalLbl.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UserTotalLbl.ForeColor = System.Drawing.Color.White;
+            this.UserTotalLbl.Location = new System.Drawing.Point(69, 54);
+            this.UserTotalLbl.Name = "UserTotalLbl";
+            this.UserTotalLbl.Size = new System.Drawing.Size(66, 24);
+            this.UserTotalLbl.TabIndex = 9;
+            this.UserTotalLbl.Text = "Stock";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(69, 13);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(59, 24);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Users";
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,11 +263,19 @@ namespace BookShop
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "DashBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.Load += new System.EventHandler(this.DashBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -162,5 +290,14 @@ namespace BookShop
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label UserTotalLbl;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label AmountLbl;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label BookStockLbl;
+        private System.Windows.Forms.Label label2;
     }
 }

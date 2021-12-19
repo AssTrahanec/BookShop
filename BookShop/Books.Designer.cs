@@ -156,9 +156,9 @@ namespace BookShop
             this.BookDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.BookDGV.ColumnHeadersHeight = 25;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -455,6 +455,7 @@ namespace BookShop
             this.label9.Size = new System.Drawing.Size(82, 24);
             this.label9.TabIndex = 10;
             this.label9.Text = "Logout";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
@@ -467,6 +468,7 @@ namespace BookShop
             this.label7.Size = new System.Drawing.Size(121, 24);
             this.label7.TabIndex = 9;
             this.label7.Text = "DashBoard";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -479,6 +481,7 @@ namespace BookShop
             this.label6.Size = new System.Drawing.Size(59, 24);
             this.label6.TabIndex = 8;
             this.label6.Text = "Users";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 

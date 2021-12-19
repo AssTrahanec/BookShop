@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,22 +10,30 @@ using System.Windows.Forms;
 
 namespace BookShop
 {
-    public partial class Login : Form
+    public partial class AdminLogin : Form
     {
-        public Login()
+        public AdminLogin()
         {
             InitializeComponent();
         }
-        SqlConnection Con = new SqlConnection("Data Source=localhost;" + "Initial Catalog=BookShopDb;" + "Integrated Security=SSPI");
-        public static string UserName = "";
+
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
+            if(UPassTb.Text == "Password")
+            {
+                Books Obj = new Books();
+                Obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong password");
+            }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            AdminLogin Obj = new AdminLogin();
+            Login Obj = new Login();
             Obj.Show();
             this.Hide();
         }

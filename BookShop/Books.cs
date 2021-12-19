@@ -161,5 +161,26 @@ namespace BookShop
                 }
             }
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Users Obj = new Users();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            DashBoard Obj = new DashBoard();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }
