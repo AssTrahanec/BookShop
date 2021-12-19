@@ -29,17 +29,18 @@ namespace BookShop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Billing));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Billing));
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SubmitBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.UserNameLbl = new System.Windows.Forms.Label();
             this.BookDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.TotalLbl = new System.Windows.Forms.Label();
@@ -62,7 +63,6 @@ namespace BookShop
             this.QtyTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.SubmitBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookDGV)).BeginInit();
@@ -130,6 +130,32 @@ namespace BookShop
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(895, 622);
             this.panel2.TabIndex = 5;
+            // 
+            // SubmitBtn
+            // 
+            this.SubmitBtn.ActiveBorderThickness = 1;
+            this.SubmitBtn.ActiveCornerRadius = 20;
+            this.SubmitBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.SubmitBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.SubmitBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.SubmitBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubmitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SubmitBtn.BackgroundImage")));
+            this.SubmitBtn.ButtonText = "Submit";
+            this.SubmitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SubmitBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.SubmitBtn.IdleBorderThickness = 1;
+            this.SubmitBtn.IdleCornerRadius = 20;
+            this.SubmitBtn.IdleFillColor = System.Drawing.Color.White;
+            this.SubmitBtn.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.SubmitBtn.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.SubmitBtn.Location = new System.Drawing.Point(624, 460);
+            this.SubmitBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.SubmitBtn.Name = "SubmitBtn";
+            this.SubmitBtn.Size = new System.Drawing.Size(109, 38);
+            this.SubmitBtn.TabIndex = 31;
+            this.SubmitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
             // UserNameLbl
             // 
@@ -205,7 +231,7 @@ namespace BookShop
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TotalLbl.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.TotalLbl.Location = new System.Drawing.Point(635, 349);
+            this.TotalLbl.Location = new System.Drawing.Point(644, 431);
             this.TotalLbl.Name = "TotalLbl";
             this.TotalLbl.Size = new System.Drawing.Size(58, 24);
             this.TotalLbl.TabIndex = 28;
@@ -465,32 +491,6 @@ namespace BookShop
             this.label1.Size = new System.Drawing.Size(118, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Book Shop";
-            // 
-            // SubmitBtn
-            // 
-            this.SubmitBtn.ActiveBorderThickness = 1;
-            this.SubmitBtn.ActiveCornerRadius = 20;
-            this.SubmitBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.SubmitBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.SubmitBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.SubmitBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubmitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SubmitBtn.BackgroundImage")));
-            this.SubmitBtn.ButtonText = "Submit";
-            this.SubmitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SubmitBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitBtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.SubmitBtn.IdleBorderThickness = 1;
-            this.SubmitBtn.IdleCornerRadius = 20;
-            this.SubmitBtn.IdleFillColor = System.Drawing.Color.White;
-            this.SubmitBtn.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.SubmitBtn.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.SubmitBtn.Location = new System.Drawing.Point(615, 378);
-            this.SubmitBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.SubmitBtn.Name = "SubmitBtn";
-            this.SubmitBtn.Size = new System.Drawing.Size(109, 38);
-            this.SubmitBtn.TabIndex = 31;
-            this.SubmitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
             // Billing
             // 

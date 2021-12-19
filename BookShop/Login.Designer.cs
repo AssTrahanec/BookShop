@@ -38,7 +38,7 @@ namespace BookShop
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UPassTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.UnameTb = new System.Windows.Forms.TextBox();
@@ -97,7 +97,7 @@ namespace BookShop
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.bunifuThinButton21);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.UPassTb);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.UnameTb);
@@ -143,6 +143,7 @@ namespace BookShop
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 38);
             this.bunifuThinButton21.TabIndex = 5;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click_1);
             // 
             // label3
             // 
@@ -155,14 +156,14 @@ namespace BookShop
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
-            // textBox2
+            // UPassTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.textBox2.Location = new System.Drawing.Point(83, 134);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 29);
-            this.textBox2.TabIndex = 2;
+            this.UPassTb.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.UPassTb.Location = new System.Drawing.Point(83, 134);
+            this.UPassTb.Multiline = true;
+            this.UPassTb.Name = "UPassTb";
+            this.UPassTb.Size = new System.Drawing.Size(186, 29);
+            this.UPassTb.TabIndex = 2;
             // 
             // label2
             // 
@@ -221,7 +222,7 @@ namespace BookShop
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox UnameTb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UPassTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

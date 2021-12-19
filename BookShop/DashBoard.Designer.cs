@@ -88,6 +88,7 @@ namespace BookShop
             this.label9.Size = new System.Drawing.Size(82, 24);
             this.label9.TabIndex = 10;
             this.label9.Text = "Logout";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
@@ -147,7 +148,7 @@ namespace BookShop
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label1.Location = new System.Drawing.Point(321, 11);
+            this.label1.Location = new System.Drawing.Point(360, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 24);
             this.label1.TabIndex = 1;
@@ -237,7 +238,7 @@ namespace BookShop
             this.UserTotalLbl.BackColor = System.Drawing.Color.Transparent;
             this.UserTotalLbl.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UserTotalLbl.ForeColor = System.Drawing.Color.White;
-            this.UserTotalLbl.Location = new System.Drawing.Point(69, 54);
+            this.UserTotalLbl.Location = new System.Drawing.Point(69, 59);
             this.UserTotalLbl.Name = "UserTotalLbl";
             this.UserTotalLbl.Size = new System.Drawing.Size(66, 24);
             this.UserTotalLbl.TabIndex = 9;

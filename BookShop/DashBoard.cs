@@ -56,5 +56,12 @@ namespace BookShop
             UserTotalLbl.Text = dt2.Rows[0][0].ToString();
             Con.Close();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

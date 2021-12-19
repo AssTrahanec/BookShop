@@ -37,6 +37,10 @@ namespace BookShop
             {
                 MessageBox.Show("Missing Information");
             }
+            else if(UPhoneTb.Text.Length != 11)
+            {
+                MessageBox.Show("Wrong Phone Format");
+            }
             else
             {
                 try

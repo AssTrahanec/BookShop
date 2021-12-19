@@ -101,18 +101,25 @@ namespace BookShop
 
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
-            try
+            if (ClientNameTb.Text == "")
             {
-                Con.Open();
-                string query = "insert into BillTbl values('" + UserNameLbl.Text + "','" + ClientNameTb.Text + "'," + GrdTotal + ")";
-                SqlCommand cmd = new SqlCommand(query, Con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Bill Saved Successfully");
-                Con.Close();
+                MessageBox.Show("Name Text box is empty");
             }
-            catch(Exception Ex)
+            else
             {
-                MessageBox.Show(Ex.Message);
+                try
+                {
+                    Con.Open();
+                    string query = "insert into BillTbl values('" + ClientNameTb.Text + "'," + GrdTotal + "," + Login.UId + ")";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Bill Saved Successfully");
+                    Con.Close();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
             }
         }
 
